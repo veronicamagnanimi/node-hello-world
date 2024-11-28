@@ -13,3 +13,16 @@ if (numero % 2 === 0) {
 } else {
     console.log("Dispari");
 }
+
+//2 BONUS
+const contaVocali = process.argv.slice(2).join(" ");
+const vocali = "aeiou";
+
+let first = 0;
+for(let i = 0; i < contaVocali.length; i++) {
+    if(vocali.includes(contaVocali[i])) {
+        first++;
+    }
+}
+
+console.log(`La stringa contiene ${first} vocali`);
